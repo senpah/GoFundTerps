@@ -1,0 +1,20 @@
+.wrapper {
+  width: 350px; padding: 20px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: 0 0 10px 0 #000;
+  border-radius: 15px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+h2, p {
+  text-align: center;
+}
+
+.help-block {
+  color: red;
+}

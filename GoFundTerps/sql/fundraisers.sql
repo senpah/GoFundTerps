@@ -1,0 +1,7 @@
+CREATE TABLE fundraisers (
+fundraiser_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+org_name VARCHAR(255) NOT NULL UNIQUE,
+fundraiser_name VARCHAR(255) NOT NULL,
+fundraiser_desc TEXT NOT NULL,
+created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);

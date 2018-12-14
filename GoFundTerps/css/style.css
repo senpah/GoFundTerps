@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
+
+body {
+	margin: 0;
+	background: #FFFAFA;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 500;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+header {
+  background: red;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  border-style: solid;
+  border-width: thin;
+  padding-top: 5px;
+  padding-right: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 65px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+nav a:hover {
+  color: #444;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+nav ul li ul {
+	display: none;
+	position: absolute;
+	background-color: red;
+	color: white;
+	font-size: 14px;
+	padding: 12px;
+	border-radius: 0px 0px 10px 10px;
+}
+
+nav ul li:hover ul {
+	display: block;
+}
+
+/*width and border radius for the fundraisers drop-down menu*/
+nav ul li ul li {
+	width: 190px;
+	border-radius: 10px;
+}
+
+nav ul li ul li a {
+	padding: 8px 14px;
+}
+
+/*disables the hover effect for the fundraisers drop-down menu*/
+nav ul li ul li a:hover::before {
+	width: 0%;
+}
+
+footer {
+  bottom: 0px;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+}
